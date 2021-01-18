@@ -16,7 +16,7 @@ const port = process.env.PORT || 3001 // the fallback is for local development, 
 
 server.use(express.json())
 
-const whiteList =
+/* const whiteList =
   process.env.NODE_ENV === "production"
     ? [process.env.FE_URL_PROD]
     : [process.env.FE_URL_DEV]
@@ -32,7 +32,7 @@ const corsOptions = {
     }
   },
 }
-server.use(cors(corsOptions)) // CROSS ORIGIN RESOURCE SHARING
+server.use(cors(corsOptions)) // CROSS ORIGIN RESOURCE SHARING */
 
 //ROUTES
 
